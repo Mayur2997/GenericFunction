@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         //Return value is Any
         print("Age: \(AnyTypeGenericMethod(from: 22))")
-        print("Name: \(AnyTypeGenericMethod(from: "Mayur"))") 
+        print("Name: \(AnyTypeGenericMethod(from: "Mayur"))")
 
         //Return value is dictionary
         print("City: \(dictGenericMethod(from: [1: "Ahmedabad", 2: "Surat", 3: "Vadodra"]))") // [Int : String] type dictionary
@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     
     
     //Parameter is Any  -> Return value is Any
-    func AnyTypeGenericMethod<Value>(from dictionary:  Value) ->  Value {
-        return dictionary
+    func AnyTypeGenericMethod<Value>(from val:  Value) ->  Value {
+        return val
     }
      
     //Parameter is dictionary  -> Return value is dictionary
