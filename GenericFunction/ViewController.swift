@@ -15,8 +15,7 @@ class ViewController: UIViewController {
         
         //Return value is Any
         print("Age: \(AnyTypeGenericMethod(from: 22))")
-        print("Name: \(AnyTypeGenericMethod(from: "Mayur"))")
-
+        print("Name: \(AnyTypeGenericMethod(from: "Mayur"))") 
 
         //Return value is dictionary
         print("City: \(dictGenericMethod(from: [1: "Ahmedabad", 2: "Surat", 3: "Vadodra"]))") // [Int : String] type dictionary
@@ -37,7 +36,7 @@ class ViewController: UIViewController {
         return Array(dictionary)
     }
 
-    //Generics Addition
+    //Parameter is Any Numeric value -> Return value is Any Numeric value (Int, Float, Double)
     func genericAddition<T : Numeric >(val1: T, val2: T) -> T {
         return val1+val2
     }
